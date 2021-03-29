@@ -1,67 +1,133 @@
-* {
+*{
+    margin: 0px;
+    padding: 0px;    
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
-}
-
-header {
-    background-color: #EAC926;
-}
-
-header .main-header-top-bar {
-    background-color: #EAC926;
-    width: 90%;
-    padding: 20px;
-}
-
-header .logo{
-    width: 200px;
-}
-
-header .copy-header {
-    font-weight: 400;
-    text-align: center;
-}
-
-header .main-navbar {
-    display: none;
-}
-
-header .main-navbar ul {
-    list-style: none;
-}
-
-header .main-navbar a {
-    text-decoration: none;
-    color: black ;
-    display: inline-block;
-}
-
-header .hamburger-button {
-    background-color: #03264C;
-    color: white;
-    display: block;
-    max-width: 50px;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto ;
-}
-
-header .banner {
-    width: 100%;
-    padding-top: 10px;
-}
-
-/*  CODIGO VIEJO COPIADO AL NUEVO */
-main {
-    width: 100%;
     background-color: #ebebeb;
-
 }
 
-main section h4{
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.visitas,
+div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+}
+
+.descuento,
+.descripcion{
     font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.descripcion{
+    color: #666;
+}
+
+.descripcion{
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
 }
 
 main section article{
@@ -69,37 +135,41 @@ main section article{
     margin: 10px 0px;
 }
 
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
 main section article i{
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
+    background-color: #FFF;
     border: 1px solid #39b54a;
-    background-color: white;
     border-radius: 50%;
-    right: 5x;
+    position: absolute;
+    right: 20px;
     top: -15px;
 }
 
-main article section h3{
-    font-size: 24px;
+main section h3{
+    margin: 20px 0px;
 }
 
-main article .description {
-    border: 1px solid #ebebeb;
-    padding: 20px ;
-}
-
-main .precio{
-    font-size: 18px;
-}
-
-main p {
-    font-size: 16px;
-}
-
-main section article img {
+article div.main-article{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
 }
 
 

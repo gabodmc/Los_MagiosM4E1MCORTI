@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const port = 3000
 const path = require('path');
-console.log('alberto probando')
 app.use(express.static('public'));
 
 
@@ -11,5 +10,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('Example app listening on port '+ port);
+    console.log('App funcionando en puerto '+ port);
 });
