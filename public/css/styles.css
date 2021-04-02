@@ -33,6 +33,7 @@ header div.top-header p{
 
 header{
     background-color: #EAC926;
+    padding: 20px;
 }
 
 header div.logo,
@@ -49,7 +50,7 @@ header .form{
     padding: 2px;
     font-size: 11px;
 }
-header nav{
+header .main-navbar{
     display: none;
     font-size: 12px;
     margin-left: 20px;
@@ -188,51 +189,144 @@ article div.main-article{
     padding: 15px;
 }
 
-
 footer {
-    line-height: 100%;
+    background-color: #fff; bottom: 0; 
+} 
+
+footer i {
+    color: #03264C;
+} 
+
+footer section {
+    text-align: center; 
+    margin: 25px; 
+}   
+
+footer h4 {
+    color: #666; 
+    font-size: 18px; 
 }
-
-footer i{
-    color: blue;
-    margin: 2em 10px;
-    font-size: 40px;
-    margin: 0;
-}
-
-
-footer article{
-    color: #666;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-}
-
 footer p{
-    font-size: 12px;
-    margin: 0;
+    color: #666; 
+    max-width: 75%; 
+    margin: auto;
+}
+
+footer h5 {
+    color: #666; 
+    text-align: left; 
+    font-size: 10px; 
+    font-weight: 500; 
+    margin: 30px 0 15px 15px; 
+    padding-bottom: 25px; 
+    display: block; 
+    width: 100%;
 }
 
 
 
+/* Media Queries Tablet */
 @media (min-width: 768px){
-    .top-header {
-        width: 100%;
-        display: flex;
-       justify-content: space-between;
+
+.main-header-top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo { 
+    flex: 1 1 30%;
+}
+#buscador { 
+    flex: 1 1 30%;
+}
+
+.top-header{
+    font-weight: 200; text-align: right; display: inline-block;  flex: 3 1 33%;
+}
+
+.burguer-menu {
+    display: none;
+}
+
+.main-navbar {
+    display: flex; justify-content: space-between;
+}
+
+.main-navbar ul {
+    display: flex; 
+}
+
+.main-navbar li {
+    margin: 0 5px;
+}
+
+.main-navbar ul a {
+    font-size: 16px;
+}
+
+main section div.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+main section div.productos article{
+    width: 45%;
+}
+.precios,
+.descuentos{
+    width: 50%;
+    }
+
+}
+
+/* Media Queries Desktop */
+@media (min-width: 1200px){
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     
     }
-  
-   #logo { flex: 1 1 30%;}
-   #buscador { flex: 1 1 30%;}
-   .top-header, header .p{font-weight: 200; text-align: right; display: inline-block;  flex: 3 1 33%;}
 
-   .burguer-menu {display: none;}
-   .main-navbar {display: flex; justify-content: space-between;}
-   .main-navbar ul {display: flex; }
-   .main-navbar li {margin: 0 5px;}
-   .main-navbar ul a {font-size: 16px;}
-   main section div.productos{
+#logo { 
+    flex: 1 1 30%;
+}
+
+#buscador { 
+    flex: 1 1 30%;
+}
+
+.top-header, header .p{
+    font-weight: 200; text-align: right; display: inline-block;  flex: 3 1 33%;
+}
+
+header .burger-menu {
+    display: none;
+}
+
+header .main-navbar {
+    display: flex; justify-content: space-between;
+}
+
+header .main-navbar ul {
+    display: flex; 
+}
+
+header .main-navbar li {
+    margin: 0 5px;
+}
+
+header .main-navbar ul a {
+    font-size: 16px;
+}
+
+main section div.productos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,11 +336,22 @@ footer p{
 main section div.productos article{
     width: 45%;
 }
+
 .precios,
 .descuentos{
     width: 50%;
 }
+
 }
 
+.ico-footer {
+    width: 31%; 
+    display:inline-block;
+    text-align: center;
+}
+
+footer h5{
+    margin-left: 55px;
+}
 
 
