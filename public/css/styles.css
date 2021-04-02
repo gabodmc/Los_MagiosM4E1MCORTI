@@ -51,7 +51,7 @@ header .form{
     font-size: 11px;
 }
 header .main-navbar{
-    display: none;
+
     font-size: 12px;
     margin-left: 20px;
 }
@@ -125,14 +125,12 @@ div.ofertas
 }
 
 .descripcion {
-    display: none;
     font-size: 16px;
-    font-weight: normal;
-    margin-top: 20px;
-    color: #666;
+    font-weight: normal; 
+    text-align: left; 
+    padding-top: 5px; 
+    color:grey
 }
-
-
 
 section.banner img{
     width: 100%;
@@ -344,7 +342,7 @@ main section div.productos article{
 
 }
 
-.ico-footer {
+.icono-footer {
     width: 31%; 
     display:inline-block;
     text-align: center;
