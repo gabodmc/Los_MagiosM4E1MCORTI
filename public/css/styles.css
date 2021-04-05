@@ -44,14 +44,17 @@ header .form{
 header div.logo{
     padding: 10px;
 }
+
 header .form{
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
 }
-header .main-navbar{
 
+header .main-navbar{
+    visibility: hidden;
+    display: none;
     font-size: 12px;
     margin-left: 20px;
 }
@@ -81,6 +84,7 @@ header .form .submit{
 }
 
 div.burger-menu{
+    visibility: visible;
     display: block;
     text-align: center;
 }
@@ -109,7 +113,7 @@ div.visitas
 div.ofertas
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .precio{
@@ -141,9 +145,6 @@ main{
     margin: 0 auto;
 }
 
-main section div.productos {
-    flex-grow: 2;
-}
 
 main section article{
     background-color: #fff;    
@@ -188,17 +189,15 @@ article div.main-article{
 }
 
 footer {
-    background-color: #fff; bottom: 0; 
+    background-color: #fff; 
+    bottom: 0; 
 } 
 
 footer i {
     color: #03264C;
 } 
 
-footer section {
-    text-align: center; 
-    margin: 25px; 
-}   
+
 
 footer h4 {
     color: #666; 
@@ -223,93 +222,17 @@ footer h5 {
 
 
 
-/* Media Queries Tablet */
-@media (min-width: 768px){
 
-.main-header-top-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#logo { 
-    flex: 1 1 30%;
-}
-#buscador { 
-    flex: 1 1 30%;
-}
-
-.top-header{
-    font-weight: 200; text-align: right; display: inline-block;  flex: 3 1 33%;
-}
-
-.burguer-menu {
-    display: none;
-}
-
-.main-navbar {
-    display: flex; justify-content: space-between;
-}
-
-.main-navbar ul {
-    display: flex; 
-}
-
-.main-navbar li {
-    margin: 0 5px;
-}
-
-.main-navbar ul a {
-    font-size: 16px;
-}
-
-main section div.productos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-
-main section div.productos article{
-    width: 45%;
-}
-.precios,
-.descuentos{
-    width: 50%;
-    }
-
-}
 
 /* Media Queries Desktop */
-@media (min-width: 1200px){
-
-.top-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-    }
-
-#logo { 
-    flex: 1 1 30%;
-}
-
-#buscador { 
-    flex: 1 1 30%;
-}
-
-.top-header, header .p{
-    font-weight: 200; text-align: right; display: inline-block;  flex: 3 1 33%;
-}
-
-header .burger-menu {
-    display: none;
-}
+@media (min-width: 769px) {
 
 header .main-navbar {
-    display: flex; justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
 }
 
 header .main-navbar ul {
@@ -324,32 +247,38 @@ header .main-navbar ul a {
     font-size: 16px;
 }
 
-main section div.productos{
+div.burger-menu{
+    visibility: hidden;
+    display: none;
+}
+
+main section div.productos {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
+
 main section div.productos article{
     width: 45%;
 }
-
 .precios,
 .descuentos{
     width: 50%;
 }
 
-}
-
-.icono-footer {
-    width: 31%; 
-    display:inline-block;
+footer {
     text-align: center;
+    }
+
 }
 
-footer h5{
-    margin-left: 55px;
+/* Media Queries Tablet */
+@media (min-width: 361px) {
+
+
 }
 
 
