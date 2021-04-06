@@ -391,14 +391,6 @@ footer h5 {
 
 
 /* Media Queries Tablet */
-@media (min-width: 361px) {
-
-    
-
-
-}
-
-/* Media Queries Desktop */
 @media (min-width: 769px) {
 
 #buscador { flex: 1 1 30%;}
@@ -460,7 +452,7 @@ main section div.productos article{
 
 }
 
-/* Media Queries Tablet */
+/* Media Queries Desktop */
 @media (min-width: 1200px) {
 footer section {
     display: flex;
