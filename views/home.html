@@ -18,11 +18,18 @@
             <div class="logo">
                 <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos, marcas y más </div>
-                <div class="submit"><i class="fa fa-search"></i></div>
+            <div class="buscador">
+                <form method="get" action="">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
             </div>
-            <p><i class="fas fa-hand-holding-usd"></i>HEROKU Comprá en cuotas y sin tarjeta de crédito</p>
+            <p class="compra">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compr&aacute; en cuotas y sin tarjeta de cr&eacute;dito
+            </p>
         </div>
         <nav class="main-navbar">
             <ul class="letf-navbar">
@@ -45,7 +52,7 @@
         <img src="images/img-home-banner.jpg" alt="banner">
     </section>
     <main>
-        <section class="visitas">
+        <section id="visitas">
             <h3>Basado en tu última visita</h3>
             <div class="productos">
                 <article>
@@ -87,7 +94,7 @@
                 </article>
             </div>
         </section>
-        <section class="offers">
+        <section id="offers">
             <h3>Ofertas</h3>
             <div class="productos">
                 <article>
@@ -132,7 +139,6 @@
     </main>
     <footer>
         <section>
-            <div class="iconos"></div>
             <div class="icono-footer">
             <i class="far fa-credit-card azul"></i>
             <h4>Paga con tarjeta y efectivo</h4>
@@ -150,9 +156,10 @@
                 porque estás siempre protegid@.</p>
             
                 </div>
+            </section>
                 <div class="copyright">
-        <h5>Copyright &copy; 1999-2021 MercadoLiebre S.R.L.</h5></div>
-        </section>
+        <h5>Copyright &copy; 1999-2021 MercadoLiebre S.R.L.</h5>
+    </div>
     </footer>
 </body>
 
