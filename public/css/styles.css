@@ -104,20 +104,6 @@ main section div.productos {
     font-weight: normal;
 }
 
-@keyframes camion {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
 
 .descripcion {
     font-size: 16px; 
@@ -137,23 +123,14 @@ main section div.productos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
     animation: camion 0.5s 1;
 }
-.azul {color: #1758BB; 
+.azul {color: blue; 
     font-size: 2em; 
     margin: 30px 0 15px 0; 
     transition: all 0.3s;
 }
 .azul:hover{
-    color: #EAC926;
+    color: #4548f1;
 }
-
-.verde{
-    color: #39b54a; 
-    font-size: 16px; 
-    display: flex; 
-    text-align:right; 
-    width:70%; 
-    margin-top: 10px; }
-
 
 section.banner img{
     width: 100%;
@@ -364,7 +341,6 @@ footer section {
 
 footer i {
     font-size: 20px;
-    color:#1259c3;
 } 
 
 
