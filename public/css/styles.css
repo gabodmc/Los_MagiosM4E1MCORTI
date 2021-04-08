@@ -10,18 +10,100 @@ html, body{
     height: 100%;
 }
 
-main{
-    width: 90%;
-    margin: 0 auto;
+
+h3{
+    font-size: 24px;
 }
 
-main section.banner {
+p{
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+
+header .main-navbar{
+    visibility: hidden;
+    display: none;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.main-navbar ul a:hover {
+    text-decoration: none; 
+    color:#1758BB;
+}
+
+div.burger-menu{
+    visibility: visible;
+    display: block;
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+section.banner {
     width: 100%;
 }
 
 main section div.productos {
     display: block;
 }
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+
+.descuento{
+    width: 70%;
+    font-size: 16px;
+    font-weight: normal;
+}
+
 
 .descripcion {
     font-size: 16px; 
@@ -41,7 +123,23 @@ main section div.productos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
     animation: camion 0.5s 1;
 }
+.azul {color: blue; 
+    font-size: 2em; 
+    margin: 30px 0 15px 0; 
+    transition: all 0.3s;
+}
+.azul:hover{
+    color: #4548f1;
+}
 
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* PRODUCTOS */
 main section article{
